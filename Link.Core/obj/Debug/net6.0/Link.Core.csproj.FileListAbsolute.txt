@@ -1,0 +1,14 @@
+C:\Users\FUJITSU\Documents\LinkAPI\Link.Core\bin\Debug\net6.0\Link.Core.deps.json
+C:\Users\FUJITSU\Documents\LinkAPI\Link.Core\bin\Debug\net6.0\Link.Core.runtimeconfig.json
+C:\Users\FUJITSU\Documents\LinkAPI\Link.Core\bin\Debug\net6.0\Link.Core.dll
+C:\Users\FUJITSU\Documents\LinkAPI\Link.Core\bin\Debug\net6.0\Link.Core.pdb
+C:\Users\FUJITSU\Documents\LinkAPI\Link.Core\obj\Debug\net6.0\Link.Core.csproj.AssemblyReference.cache
+C:\Users\FUJITSU\Documents\LinkAPI\Link.Core\obj\Debug\net6.0\Link.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\FUJITSU\Documents\LinkAPI\Link.Core\obj\Debug\net6.0\Link.Core.AssemblyInfoInputs.cache
+C:\Users\FUJITSU\Documents\LinkAPI\Link.Core\obj\Debug\net6.0\Link.Core.AssemblyInfo.cs
+C:\Users\FUJITSU\Documents\LinkAPI\Link.Core\obj\Debug\net6.0\Link.Core.csproj.CoreCompileInputs.cache
+C:\Users\FUJITSU\Documents\LinkAPI\Link.Core\obj\Debug\net6.0\Link.Core.dll
+C:\Users\FUJITSU\Documents\LinkAPI\Link.Core\obj\Debug\net6.0\refint\Link.Core.dll
+C:\Users\FUJITSU\Documents\LinkAPI\Link.Core\obj\Debug\net6.0\Link.Core.pdb
+C:\Users\FUJITSU\Documents\LinkAPI\Link.Core\obj\Debug\net6.0\Link.Core.genruntimeconfig.cache
+C:\Users\FUJITSU\Documents\LinkAPI\Link.Core\obj\Debug\net6.0\ref\Link.Core.dll

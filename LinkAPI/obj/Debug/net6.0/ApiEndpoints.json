@@ -1,0 +1,66 @@
+[
+  {
+    "ContainingType": "LinkAPI.Controllers.HomeScreenController",
+    "Method": "GetActiveUsers",
+    "RelativePath": "api/HomeScreen/GetActiveUsers/{userID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userID",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LinkAPI.Controllers.HomeScreenController",
+    "Method": "GetAllChatsByuserID",
+    "RelativePath": "api/HomeScreen/GetAllChatsByuserID/{userID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userID",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LinkAPI.Controllers.HomeScreenController",
+    "Method": "GetAllUnreadMessagesCount",
+    "RelativePath": "api/HomeScreen/GetAllUnreadMessagesCount/{userID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userID",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LinkAPI.Controllers.HomeScreenController",
+    "Method": "searchForUser",
+    "RelativePath": "api/HomeScreen/searchForUser/{userName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
