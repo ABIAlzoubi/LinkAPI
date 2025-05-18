@@ -88,3 +88,4 @@ C:\Users\FUJITSU\Documents\LinkAPI\LinkAPI\obj\Debug\net6.0\refint\LinkAPI.dll
 C:\Users\FUJITSU\Documents\LinkAPI\LinkAPI\obj\Debug\net6.0\LinkAPI.pdb
 C:\Users\FUJITSU\Documents\LinkAPI\LinkAPI\obj\Debug\net6.0\LinkAPI.genruntimeconfig.cache
 C:\Users\FUJITSU\Documents\LinkAPI\LinkAPI\obj\Debug\net6.0\ref\LinkAPI.dll
+C:\Users\FUJITSU\Documents\LinkAPI\LinkAPI\obj\Debug\net6.0\LinkAPI.sourcelink.json

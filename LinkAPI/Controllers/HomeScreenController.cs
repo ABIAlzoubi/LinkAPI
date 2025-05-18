@@ -54,7 +54,7 @@ namespace LinkAPI.Controllers
             {
                 return BadRequest("Invalid Userid");
             }
-            var result = await _homeScreenService.GetActiveUsers(userID);
+            var result = await _homeScreenService.GetAllChatsByuserID(userID);
             return Ok(result);
         }
 
@@ -66,7 +66,7 @@ namespace LinkAPI.Controllers
             {
                 return BadRequest("Invalid Userid");
             }
-            var result = await _homeScreenService.GetActiveUsers(userID);
+            var result = await _homeScreenService.GetAllUnreadMessagesCount(userID);
             return Ok(result);
         }
 

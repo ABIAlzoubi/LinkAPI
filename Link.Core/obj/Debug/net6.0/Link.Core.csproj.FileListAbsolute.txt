@@ -12,3 +12,4 @@ C:\Users\FUJITSU\Documents\LinkAPI\Link.Core\obj\Debug\net6.0\refint\Link.Core.d
 C:\Users\FUJITSU\Documents\LinkAPI\Link.Core\obj\Debug\net6.0\Link.Core.pdb
 C:\Users\FUJITSU\Documents\LinkAPI\Link.Core\obj\Debug\net6.0\Link.Core.genruntimeconfig.cache
 C:\Users\FUJITSU\Documents\LinkAPI\Link.Core\obj\Debug\net6.0\ref\Link.Core.dll
+C:\Users\FUJITSU\Documents\LinkAPI\Link.Core\obj\Debug\net6.0\Link.Core.sourcelink.json

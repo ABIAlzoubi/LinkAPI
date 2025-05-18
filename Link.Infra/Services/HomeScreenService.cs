@@ -17,21 +17,21 @@ namespace Link.Infra.Services
             _homeScreenRepository = homeScreenrepository;
         }
 
-        public Task<List<ActiveUsersDto>> GetActiveUsers(decimal userID)
+        public async Task<List<ActiveUsersDto>> GetActiveUsers(decimal userID)
         {
-            return _homeScreenRepository.GetActiveUsers(userID);
+            return await _homeScreenRepository.GetActiveUsers(userID);
         }
-        public Task<linkUserDto> searchForUser(String userName)
+        public async Task<linkUserDto> searchForUser(String userName)
         {
-            return _homeScreenRepository.searchForUser(userName);
+            return await _homeScreenRepository.searchForUser(userName);
         }
-        public Task<List<ChatDto>> GetAllChatsByuserID(decimal userID)
+        public async Task<List<ChatDto>> GetAllChatsByuserID(decimal userID)
         { 
-            return _homeScreenRepository.GetAllChatsByuserID(userID);
+            return await _homeScreenRepository.GetAllChatsByuserID(userID);
         }
-        public Task<List<UnreadedMessagesCountDto>> GetAllUnreadMessagesCount(decimal userID)
+        public async Task<List<UnreadedMessagesCountDto>> GetAllUnreadMessagesCount(decimal userID)
         {
-            return _homeScreenRepository.GetAllUnreadMessagesCount(userID);
+            return await _homeScreenRepository.GetAllUnreadMessagesCount(userID);
         }
     }
 }
