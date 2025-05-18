@@ -2,6 +2,7 @@
 using Link.Core.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Link.Core.Utils;
 
 namespace LinkAPI.Controllers
 {
@@ -24,6 +25,10 @@ namespace LinkAPI.Controllers
             {
                 return BadRequest("Empty Value");
             }
+
+            var hashedPassword = HashingPasswordUtil.HashPassword(profile.HASHEDPASSWORD!);
+            profile.HASHEDPASSWORD = hashedPassword;
+
             await _profileService.CreateUserProfile(profile);
             return Ok("created Successfully");
         }
