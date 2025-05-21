@@ -19,6 +19,8 @@ builder.Services.AddScoped<IHomeScreenRepository, HomeScreenRepository>();
 builder.Services.AddScoped<IHomeScreenService, HomeScreenService>();
 builder.Services.AddScoped<IProfileRepository, ProfileRepository>();
 builder.Services.AddScoped<IProfileService, ProfileService>();
+builder.Services.AddScoped<IContactRepository, ContactRepository>();
+builder.Services.AddScoped<IContactService, ContactService>();
 
 
 var app = builder.Build();

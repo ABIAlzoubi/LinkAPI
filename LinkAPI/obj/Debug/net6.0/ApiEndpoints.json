@@ -1,5 +1,63 @@
 [
   {
+    "ContainingType": "LinkAPI.Controllers.ContactsController",
+    "Method": "AddNewContact",
+    "RelativePath": "api/Contacts/AddNewContact/{u_id}/{Contact_id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "u_id",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "Contact_id",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LinkAPI.Controllers.ContactsController",
+    "Method": "DeleteContact",
+    "RelativePath": "api/Contacts/DeleteContact/{u_id}/{Contact_id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "u_id",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "Contact_id",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LinkAPI.Controllers.ContactsController",
+    "Method": "GetAllContacts",
+    "RelativePath": "api/Contacts/GetAllContacts/{u_id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "u_id",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "LinkAPI.Controllers.HomeScreenController",
     "Method": "GetActiveUsers",
     "RelativePath": "api/HomeScreen/GetActiveUsers/{userID}",
