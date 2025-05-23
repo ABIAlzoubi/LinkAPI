@@ -122,6 +122,190 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "LinkAPI.Controllers.MessagesController",
+    "Method": "DeleteMessage",
+    "RelativePath": "api/Messages/DeleteMessage/{m_id}/{u_id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "m_id",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "u_id",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LinkAPI.Controllers.MessagesController",
+    "Method": "EditMessage",
+    "RelativePath": "api/Messages/EditMessage/{u_id}/{m_id}/{m_content}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "u_id",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "m_id",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "m_content",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LinkAPI.Controllers.MessagesController",
+    "Method": "GetChatMessages",
+    "RelativePath": "api/Messages/GetChatMessages/{chat_id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chat_id",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LinkAPI.Controllers.MessagesController",
+    "Method": "GetMessageInfo",
+    "RelativePath": "api/Messages/GetMessageInfo/{m_id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "m_id",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LinkAPI.Controllers.MessagesController",
+    "Method": "SendMessage",
+    "RelativePath": "api/Messages/SendMessage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "message",
+        "Type": "Link.Core.DTO.SendMessageDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LinkAPI.Controllers.MessagesReactionsController",
+    "Method": "AddReaction",
+    "RelativePath": "api/MessagesReactions/AddReaction/{m_id}/{u_id}/{type}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "m_id",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "u_id",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LinkAPI.Controllers.MessagesReactionsController",
+    "Method": "EditReaction",
+    "RelativePath": "api/MessagesReactions/EditReaction/{m_id}/{u_id}/{type}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "m_id",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "u_id",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LinkAPI.Controllers.MessagesReactionsController",
+    "Method": "GetMessageReactions",
+    "RelativePath": "api/MessagesReactions/GetMessageReactions/{m_id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "m_id",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LinkAPI.Controllers.MessagesReactionsController",
+    "Method": "RemoveReaction",
+    "RelativePath": "api/MessagesReactions/RemoveReaction/{m_id}/{u_id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "m_id",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "u_id",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "LinkAPI.Controllers.ProfileController",
     "Method": "CreateUserProfile",
     "RelativePath": "api/Profile/CreateUserProfile",

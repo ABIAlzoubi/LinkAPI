@@ -21,6 +21,11 @@ builder.Services.AddScoped<IProfileRepository, ProfileRepository>();
 builder.Services.AddScoped<IProfileService, ProfileService>();
 builder.Services.AddScoped<IContactRepository, ContactRepository>();
 builder.Services.AddScoped<IContactService, ContactService>();
+builder.Services.AddScoped<IMessagesRepository, MessagesRepository>();
+builder.Services.AddScoped<IMessagesService, MessagesService>();
+builder.Services.AddScoped<IMessageReactionsRepository, MessageReactionsRepository>();
+builder.Services.AddScoped<IMessageReactionsService, MessageReactionsService>();
+
 
 
 var app = builder.Build();
