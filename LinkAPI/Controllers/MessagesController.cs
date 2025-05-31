@@ -90,5 +90,36 @@ namespace LinkAPI.Controllers
             return Ok(result);
         }
 
+        [HttpPut]
+        [Route("MakeMessageSeen/{m_id}/{user_id}")]
+        public async Task<IActionResult> MakeMessageSeen(decimal m_id,decimal user_id) 
+        {
+            if (m_id <= 0 || user_id <= 0)
+            {
+                return BadRequest("invalid message id or user id");
+            }
+            decimal senderID = await _messagesService.SenderID(m_id);
+            if (user_id == senderID)
+            {
+                return BadRequest("user is the sender");
+            }
+            return Ok();
+        }
+
+        [HttpPut]
+        [Route("MakeMessageUnSeen/{m_id}/{user_id}")]
+        public async Task<IActionResult> MakeMessageUnSeen(decimal m_id, decimal user_id)
+        {
+            if (m_id <= 0 || user_id <= 0)
+            {
+                return BadRequest("invalid message id or user id");
+            }
+            decimal senderID = await _messagesService.SenderID(m_id);
+            if (user_id == senderID)
+            {
+                return BadRequest("user is the sender");
+            }
+            return Ok();
+        }
     }
 }

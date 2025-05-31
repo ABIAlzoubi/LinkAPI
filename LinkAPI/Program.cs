@@ -25,6 +25,8 @@ builder.Services.AddScoped<IMessagesRepository, MessagesRepository>();
 builder.Services.AddScoped<IMessagesService, MessagesService>();
 builder.Services.AddScoped<IMessageReactionsRepository, MessageReactionsRepository>();
 builder.Services.AddScoped<IMessageReactionsService, MessageReactionsService>();
+builder.Services.AddScoped<IGroupRepository, GroupRepository>();
+builder.Services.AddScoped<IGroupService, GroupService>();
 
 
 

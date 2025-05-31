@@ -58,6 +58,168 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "LinkAPI.Controllers.GroupController",
+    "Method": "AddAdmin",
+    "RelativePath": "api/Group/AddAdmin/{userId}/{newAdminId}/{groupId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "newAdminId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "groupId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LinkAPI.Controllers.GroupController",
+    "Method": "AddMemberToGroup",
+    "RelativePath": "api/Group/AddMemberToGroup/{newUserId}/{groupId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newUserId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "groupId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LinkAPI.Controllers.GroupController",
+    "Method": "ChangeGroupName",
+    "RelativePath": "api/Group/ChangeGroupName/{groupId}/{newName}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "newName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LinkAPI.Controllers.GroupController",
+    "Method": "CreateGroup",
+    "RelativePath": "api/Group/createGroup/{userId}/{groupName}/{groupMembersId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "groupName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "groupMembersId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LinkAPI.Controllers.GroupController",
+    "Method": "getGroupMembers",
+    "RelativePath": "api/Group/GetGroupMembers/{groupId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LinkAPI.Controllers.GroupController",
+    "Method": "RemoveAdmin",
+    "RelativePath": "api/Group/RemoveAdmin/{userId}/{removeAdminId}/{groupId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "removeAdminId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "groupId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LinkAPI.Controllers.GroupController",
+    "Method": "RemoveMemberFromGroup",
+    "RelativePath": "api/Group/RemoveMemberFromGroup/{adminId}/{userToRemove}/{groupId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "adminId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "userToRemove",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "groupId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "LinkAPI.Controllers.HomeScreenController",
     "Method": "GetActiveUsers",
     "RelativePath": "api/HomeScreen/GetActiveUsers/{userID}",
@@ -194,6 +356,48 @@
     "Parameters": [
       {
         "Name": "m_id",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LinkAPI.Controllers.MessagesController",
+    "Method": "MakeMessageSeen",
+    "RelativePath": "api/Messages/MakeMessageSeen/{m_id}/{user_id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "m_id",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "user_id",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LinkAPI.Controllers.MessagesController",
+    "Method": "MakeMessageUnSeen",
+    "RelativePath": "api/Messages/MakeMessageUnSeen/{m_id}/{user_id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "m_id",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "user_id",
         "Type": "System.Decimal",
         "IsRequired": true
       }

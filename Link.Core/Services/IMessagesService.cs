@@ -15,5 +15,7 @@ namespace Link.Core.Services
         public Task DeleteMessage(decimal m_id, decimal u_id);
         public Task<MessageDto> GetMessageInfo(decimal m_id);
         public Task<List<MessageDto>> GetChatMessages(decimal chat_id);
+        public Task MakeMessageSeen(decimal m_id);
+        public Task MakeMessageUnSeen(decimal m_id);
     }
 }

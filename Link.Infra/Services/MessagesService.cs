@@ -46,5 +46,14 @@ namespace Link.Infra.Services
         { 
             return await _messagesRepository.GetChatMessages(chat_id);
         }
+
+        public async Task MakeMessageSeen(decimal m_id)
+        {
+            await _messagesRepository.MakeMessageSeen(m_id);
+        }
+        public async Task MakeMessageUnSeen(decimal m_id) 
+        {
+            await _messagesRepository.MakeMessageUnSeen(m_id);
+        }
     }
 }

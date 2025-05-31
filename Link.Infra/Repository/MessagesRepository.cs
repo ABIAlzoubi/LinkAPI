@@ -85,5 +85,19 @@ namespace Link.Infra.Repository
 
             return messageList;
         }
+
+
+        public async Task MakeMessageSeen(decimal m_id) 
+        {
+            var dp = new DynamicParameters();
+            dp.Add("m_id", m_id, dbType: DbType.Int32, direction: ParameterDirection.Input);
+            await _dbContext.Connection.ExecuteAsync("HomeScreen_Package.MessageSeen", dp, commandType: CommandType.StoredProcedure);
+        }
+        public async Task MakeMessageUnSeen(decimal m_id)
+        {
+            var dp = new DynamicParameters();
+            dp.Add("m_id", m_id, dbType: DbType.Int32, direction: ParameterDirection.Input);
+            await _dbContext.Connection.ExecuteAsync("HomeScreen_Package.MessageUnSeen", dp, commandType: CommandType.StoredProcedure);
+        }
     }
 }
