@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Link.Infra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66b70809335c576fcde0df5b24a7e1c2d4c405f1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6cf4f2c8427aff7c54b47a5dd0b4479fcf21dc5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Link.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Link.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -39,10 +39,20 @@ namespace Link.Infra.Services
         }
         public async Task AddMemberToGroup(decimal newUserId, decimal groupId)
         {
+            var mempers = await _groupRepository.getGroupMembers(groupId);
+            var isMember = mempers.Any(x=> x.userid == newUserId);
+            if (isMember) 
+                throw new InvalidOperationException("User is already a member of the group.");
+            
             await _groupRepository.AddMemberToGroup(newUserId, groupId);
+
         }
         public async Task RemoveMemberFromGroup(decimal adminId, decimal userToRemove, decimal groupId)
         {
+            var mempers = await _groupRepository.getGroupMembers(groupId);
+            var isMember = mempers.Any(x => x.userid == userToRemove);
+            if (!isMember)
+                throw new InvalidOperationException("User is not a member of the group.");
             await _groupRepository.RemoveMemberFromGroup(adminId, userToRemove, groupId);
         }
     }
