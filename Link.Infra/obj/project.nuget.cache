@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1fUn40hUHtk=",
+  "dgSpecHash": "EWDCfMpz4EQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\FUJITSU\\Documents\\LinkAPI\\Link.Infra\\Link.Infra.csproj",
   "expectedPackageFiles": [
@@ -81,8 +81,10 @@
     {
       "code": "NU1608",
       "level": "Warning",
-      "warningLevel": 1,
       "message": "Detected package version outside of dependency constraint: Oracle.EntityFrameworkCore 6.21.90 requires Oracle.ManagedDataAccess.Core (>= 3.21.90 && < 3.22.0) but version Oracle.ManagedDataAccess.Core 23.8.0 was resolved.",
+      "projectPath": "C:\\Users\\FUJITSU\\Documents\\LinkAPI\\Link.Infra\\Link.Infra.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\FUJITSU\\Documents\\LinkAPI\\Link.Infra\\Link.Infra.csproj",
       "libraryId": "Oracle.ManagedDataAccess.Core",
       "targetGraphs": [
         "net6.0"
@@ -91,8 +93,10 @@
     {
       "code": "NU1903",
       "level": "Warning",
-      "warningLevel": 1,
       "message": "Package 'Microsoft.Data.SqlClient' 5.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-98g6-xh36-x2p7",
+      "projectPath": "C:\\Users\\FUJITSU\\Documents\\LinkAPI\\Link.Infra\\Link.Infra.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\FUJITSU\\Documents\\LinkAPI\\Link.Infra\\Link.Infra.csproj",
       "libraryId": "Microsoft.Data.SqlClient",
       "targetGraphs": [
         "net6.0"

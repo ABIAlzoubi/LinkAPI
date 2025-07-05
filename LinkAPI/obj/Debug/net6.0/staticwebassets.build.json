@@ -1,12 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "BgHfLdU3mNEOFTLnwZufTgEd6YKOeCWZfTbp64w5HaI=",
-  "Source": "LinkAPI",
-  "BasePath": "_content/LinkAPI",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
-}
+{"Version":1,"Hash":"BgHfLdU3mNEOFTLnwZufTgEd6YKOeCWZfTbp64w5HaI=","Source":"LinkAPI","BasePath":"_content/LinkAPI","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

@@ -11,7 +11,9 @@ namespace Link.Core.DTO
         public decimal chat_id {  get; set; }
         public string name { get; set; }
         public char is_active { get; set; }
+        public string chat_type { get; set; }
         public string content { get; set; }
         public DateTime sent_at { get; set; }
+        public string profilepic { get; set; }
     }
 }

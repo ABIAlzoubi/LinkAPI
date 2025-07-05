@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TOhHTCpHR+k=",
+  "dgSpecHash": "f2qPqdBGuvU=",
   "success": true,
   "projectFilePath": "C:\\Users\\FUJITSU\\Documents\\LinkAPI\\LinkAPI\\LinkAPI.csproj",
   "expectedPackageFiles": [
@@ -84,8 +84,10 @@
     {
       "code": "NU1608",
       "level": "Warning",
-      "warningLevel": 1,
       "message": "Detected package version outside of dependency constraint: Oracle.EntityFrameworkCore 6.21.90 requires Oracle.ManagedDataAccess.Core (>= 3.21.90 && < 3.22.0) but version Oracle.ManagedDataAccess.Core 23.8.0 was resolved.",
+      "projectPath": "C:\\Users\\FUJITSU\\Documents\\LinkAPI\\LinkAPI\\LinkAPI.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\FUJITSU\\Documents\\LinkAPI\\LinkAPI\\LinkAPI.csproj",
       "libraryId": "Oracle.ManagedDataAccess.Core",
       "targetGraphs": [
         "net6.0"
