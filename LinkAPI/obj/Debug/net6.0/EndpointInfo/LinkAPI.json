@@ -810,7 +810,7 @@
         }
       }
     },
-    "/api/Profile/GetUserProfile/user_id": {
+    "/api/Profile/GetUserProfile/{user_id}": {
       "get": {
         "tags": [
           "Profile"
@@ -818,7 +818,8 @@
         "parameters": [
           {
             "name": "user_id",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "number",
               "format": "double"

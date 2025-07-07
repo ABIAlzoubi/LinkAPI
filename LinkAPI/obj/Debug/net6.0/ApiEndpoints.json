@@ -528,7 +528,7 @@
   {
     "ContainingType": "LinkAPI.Controllers.ProfileController",
     "Method": "GetUserProfile",
-    "RelativePath": "api/Profile/GetUserProfile/user_id",
+    "RelativePath": "api/Profile/GetUserProfile/{user_id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -536,7 +536,7 @@
       {
         "Name": "user_id",
         "Type": "System.Decimal",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

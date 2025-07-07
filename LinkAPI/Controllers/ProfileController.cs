@@ -34,7 +34,7 @@ namespace LinkAPI.Controllers
         }
 
         [HttpGet]
-        [Route("GetUserProfile/user_id")]
+        [Route("GetUserProfile/{user_id}")]
         public async Task<IActionResult> GetUserProfile(decimal user_id)
         {
             if (user_id <= 0)
