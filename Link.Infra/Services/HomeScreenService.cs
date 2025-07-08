@@ -21,7 +21,7 @@ namespace Link.Infra.Services
         {
             return await _homeScreenRepository.GetActiveUsers(userID);
         }
-        public async Task<linkUserDto> searchForUser(String userName)
+        public async Task<List<ActiveUsersDto>> searchForUser(String userName)
         {
             return await _homeScreenRepository.searchForUser(userName);
         }

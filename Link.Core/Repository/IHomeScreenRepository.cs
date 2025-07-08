@@ -10,7 +10,7 @@ namespace Link.Core.Repository
     public interface IHomeScreenRepository
     {
         public Task<List<ActiveUsersDto>> GetActiveUsers(decimal userID);
-        public Task<linkUserDto> searchForUser(String userName); 
+        public Task<List<ActiveUsersDto>> searchForUser(String userName); 
         public Task<List<ChatDto>> GetAllChatsByuserID(decimal userID);
         public Task<List<UnreadedMessagesCountDto>> GetAllUnreadMessagesCount(decimal userID);
     }

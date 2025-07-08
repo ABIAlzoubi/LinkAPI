@@ -23,12 +23,12 @@ namespace Link.Infra.Repository
             return result.ToList();
         }
 
-        public async Task<linkUserDto> searchForUser(String userName)
+        public async Task<List<ActiveUsersDto>> searchForUser(String userName)
         {
             var dp = new DynamicParameters();
             dp.Add("u_name", userName, dbType: DbType.String, direction: ParameterDirection.Input);
-            var result = await _dBContext.Connection.QueryAsync<linkUserDto>("HomeScreen_Package.GetuserByUserName", dp, commandType: CommandType.StoredProcedure);
-            return result.SingleOrDefault();
+            var result = await _dBContext.Connection.QueryAsync<ActiveUsersDto>("HomeScreen_Package.GetuserByUserName", dp, commandType: CommandType.StoredProcedure);
+            return result.ToList();
         }
 
         public async Task<List<ChatDto>> GetAllChatsByuserID(decimal userID)
