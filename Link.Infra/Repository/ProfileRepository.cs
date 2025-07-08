@@ -36,7 +36,7 @@ namespace Link.Infra.Repository
             var dp = new DynamicParameters();
             dp.Add("p_userid", user_id, dbType: DbType.Int32, direction: ParameterDirection.Input);
             var result = await _dbContext.Connection.QueryAsync<linkUserDto>("HomeScreen_Package.GetProfile", dp, commandType: CommandType.StoredProcedure);
-            return result.SingleOrDefault();
+            return result.SingleOrDefault()!;
         }
         public async Task UpdateUserProfile(linkUserDto profile) 
         {

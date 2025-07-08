@@ -67,8 +67,8 @@ namespace LinkAPI.Controllers
 
 
 
-        [HttpPost("UploadProfileImage")]
-        public async Task<IActionResult> UploadProfileImage(IFormFile file, [FromForm] int userId)
+        [HttpPost("UploadProfileImage/{userId}")]
+        public async Task<IActionResult> UploadProfileImage(IFormFile file,decimal userId)
         {
             if (file == null || file.Length == 0)
                 return BadRequest("No file uploaded");

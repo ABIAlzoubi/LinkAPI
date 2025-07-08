@@ -15,4 +15,8 @@
     <ProjectReference Include="..\Link.Infra\Link.Infra.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\uploads\" />
+  </ItemGroup>
+
 </Project>

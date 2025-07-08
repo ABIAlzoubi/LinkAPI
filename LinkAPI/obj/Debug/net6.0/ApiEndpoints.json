@@ -560,7 +560,7 @@
   {
     "ContainingType": "LinkAPI.Controllers.ProfileController",
     "Method": "UploadProfileImage",
-    "RelativePath": "api/Profile/UploadProfileImage",
+    "RelativePath": "api/Profile/UploadProfileImage/{userId}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -572,8 +572,8 @@
       },
       {
         "Name": "userId",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Type": "System.Decimal",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

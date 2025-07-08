@@ -864,10 +864,21 @@
         }
       }
     },
-    "/api/Profile/UploadProfileImage": {
+    "/api/Profile/UploadProfileImage/{userId}": {
       "post": {
         "tags": [
           "Profile"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -878,18 +889,11 @@
                   "file": {
                     "type": "string",
                     "format": "binary"
-                  },
-                  "userId": {
-                    "type": "integer",
-                    "format": "int32"
                   }
                 }
               },
               "encoding": {
                 "file": {
-                  "style": "form"
-                },
-                "userId": {
                   "style": "form"
                 }
               }

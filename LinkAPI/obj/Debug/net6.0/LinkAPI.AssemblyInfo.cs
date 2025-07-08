@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LinkAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5dae59879554d0f187da0399653a2edee23491b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4dd03bdf5d979e9525d09c2bef757dfde48723a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("LinkAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LinkAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

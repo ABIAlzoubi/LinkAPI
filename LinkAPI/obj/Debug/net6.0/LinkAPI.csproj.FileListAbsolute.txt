@@ -88,3 +88,4 @@ C:\Users\FUJITSU\Documents\LinkAPI\LinkAPI\obj\Debug\net6.0\rjimswa.dswa.cache.j
 C:\Users\FUJITSU\Documents\LinkAPI\LinkAPI\obj\Debug\net6.0\rjsmrazor.dswa.cache.json
 C:\Users\FUJITSU\Documents\LinkAPI\LinkAPI\obj\Debug\net6.0\rjsmcshtml.dswa.cache.json
 C:\Users\FUJITSU\Documents\LinkAPI\LinkAPI\obj\Debug\net6.0\staticwebassets.build.json.cache
+C:\Users\FUJITSU\Documents\LinkAPI\LinkAPI\bin\Debug\net6.0\LinkAPI.staticwebassets.runtime.json
