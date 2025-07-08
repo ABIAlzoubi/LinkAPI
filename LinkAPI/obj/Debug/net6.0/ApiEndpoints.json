@@ -556,5 +556,26 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LinkAPI.Controllers.ProfileController",
+    "Method": "UploadProfileImage",
+    "RelativePath": "api/Profile/UploadProfileImage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

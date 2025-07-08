@@ -1,8 +1,9 @@
 ﻿using Link.Core.DTO;
 using Link.Core.Services;
+using Link.Core.Utils;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Link.Core.Utils;
+using Oracle.ManagedDataAccess.Client;
 
 namespace LinkAPI.Controllers
 {
@@ -11,10 +12,13 @@ namespace LinkAPI.Controllers
     public class ProfileController : ControllerBase
     {
         private readonly IProfileService _profileService;
-
-        public ProfileController(IProfileService profileService)
+        private readonly IConfiguration _config;
+        private readonly IWebHostEnvironment _env;
+        public ProfileController(IProfileService profileService, IConfiguration config, IWebHostEnvironment env)
         {
             _profileService = profileService;
+            _config = config;
+            _env = env;
         }
 
         [HttpPost]
@@ -60,5 +64,34 @@ namespace LinkAPI.Controllers
             await _profileService.UpdateUserProfile(profile);
             return Ok("Updated Successfully");
         }
+
+
+
+        [HttpPost("UploadProfileImage")]
+        public async Task<IActionResult> UploadProfileImage(IFormFile file, [FromForm] int userId)
+        {
+            if (file == null || file.Length == 0)
+                return BadRequest("No file uploaded");
+
+            var uploadsPath = Path.Combine(_env.WebRootPath, "uploads");
+            if (!Directory.Exists(uploadsPath))
+                Directory.CreateDirectory(uploadsPath);
+
+            var uniqueFileName = $"{Guid.NewGuid()}{Path.GetExtension(file.FileName)}";
+            var fullPath = Path.Combine(uploadsPath, uniqueFileName);
+
+            using (var stream = new FileStream(fullPath, FileMode.Create))
+            {
+                await file.CopyToAsync(stream);
+            }
+
+            // Construct public URL
+            var baseUrl = $"{Request.Scheme}://{Request.Host}";
+            var fileUrl = $"{baseUrl}/uploads/{uniqueFileName}";
+
+
+            return Ok(new { imageUrl = fileUrl });
+        }
+
     }
 }
