@@ -85,7 +85,7 @@ namespace LinkAPI.Controllers
                 await file.CopyToAsync(stream);
             }
 
-            // Construct public URL
+
             var baseUrl = $"{Request.Scheme}://{Request.Host}";
             var fileUrl = $"{baseUrl}/uploads/{uniqueFileName}";
 

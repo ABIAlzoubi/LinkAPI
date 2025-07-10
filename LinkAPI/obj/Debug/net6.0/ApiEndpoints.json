@@ -365,13 +365,13 @@
   {
     "ContainingType": "LinkAPI.Controllers.MessagesController",
     "Method": "MakeMessageSeen",
-    "RelativePath": "api/Messages/MakeMessageSeen/{m_id}/{user_id}",
+    "RelativePath": "api/Messages/MakeMessageSeen/{c_id}/{user_id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "m_id",
+        "Name": "c_id",
         "Type": "System.Decimal",
         "IsRequired": true
       },

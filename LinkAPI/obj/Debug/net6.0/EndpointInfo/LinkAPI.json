@@ -580,14 +580,14 @@
         }
       }
     },
-    "/api/Messages/MakeMessageSeen/{m_id}/{user_id}": {
+    "/api/Messages/MakeMessageSeen/{c_id}/{user_id}": {
       "put": {
         "tags": [
           "Messages"
         ],
         "parameters": [
           {
-            "name": "m_id",
+            "name": "c_id",
             "in": "path",
             "required": true,
             "schema": {

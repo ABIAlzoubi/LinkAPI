@@ -87,10 +87,10 @@ namespace Link.Infra.Repository
         }
 
 
-        public async Task MakeMessageSeen(decimal m_id) 
+        public async Task MakeMessageSeen(decimal c_id) 
         {
             var dp = new DynamicParameters();
-            dp.Add("m_id", m_id, dbType: DbType.Int32, direction: ParameterDirection.Input);
+            dp.Add("c_id", c_id, dbType: DbType.Int32, direction: ParameterDirection.Input);
             await _dbContext.Connection.ExecuteAsync("HomeScreen_Package.MessageSeen", dp, commandType: CommandType.StoredProcedure);
         }
         public async Task MakeMessageUnSeen(decimal m_id)

@@ -91,14 +91,14 @@ namespace LinkAPI.Controllers
         }
 
         [HttpPut]
-        [Route("MakeMessageSeen/{m_id}/{user_id}")]
-        public async Task<IActionResult> MakeMessageSeen(decimal m_id,decimal user_id) 
+        [Route("MakeMessageSeen/{c_id}/{user_id}")]
+        public async Task<IActionResult> MakeMessageSeen(decimal c_id, decimal user_id) 
         {
-            if (m_id <= 0 || user_id <= 0)
+            if (c_id <= 0 || user_id <= 0)
             {
                 return BadRequest("invalid message id or user id");
             }
-            decimal senderID = await _messagesService.SenderID(m_id);
+            decimal senderID = await _messagesService.SenderID(c_id);
             if (user_id == senderID)
             {
                 return BadRequest("user is the sender");
